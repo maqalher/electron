@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <title>App</title>
+    <style>
+        * {
+            user-select: none;
+        }
+        
+        .shaka {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .title {
+            text-align: center; 
+            font-family: "Coming Soon";
+        }
+
+        .grey {
+            filter: grayscale(100); 
+        }
+
+    </style>
+
+ 
+</head>
+<body>
+    <div class="title">
+            <h1>Hola morros soy shaka de virgo</h1>
+    </div>
+    <img id="miImg" class="shaka" src="https://2.bp.blogspot.com/-ujz7DgV0fSk/UwBHy5ZoDKI/AAAAAAAABjU/BJuLYn0CmRo/s1600/cap561.jpg" alt="">
+    <!--input id="archivo" type="file" name="" id=""-->
+    <button id="btn">Add</button>
+    <div id="contededor"></div>
+</body>
+<script>
+    
+window.onload = function() {
+    let x = document.querySelector("#miImg");
+    x.addEventListener("click", myFunction);
+
+    $(".class").click(function(){
+     $(this).find(".subclass").css("visibility","visible");
+});
+
+    function myFunction() {
+        x.classList.toggle("grey");
+    }
+
+    /*let urlimg = "https://via.placeholder.com/150";
+    let texto = "mdmdmdm";
+
+    let btn = document.querySelector("#btn");
+    let contededor = document.querySelector("#contededor");
+    let archivo = document.querySelector("#archivo");
+    btn.addEventListener("click", myFunction); */
+
+    /*function myFunction() {
+        const para = document.createElement("P");
+        const t = document.createTextNode(texto);
+        para.appendChild(t);
+        const im = document.createElement("img");
+        im.setAttribute("src", urlimg);
+        contededor.appendChild(para);
+        contededor.appendChild(im);
+
+        //var file = $('#archivo').prop("files")[0];
+        console.log(archivo);
+
+        /*const valor = archivo.value;
+        const im = document.createElement("img");
+        im.setAttribute("src", valor);
+        contededor.appendChild(im);
+    }*/
+
+}     
+
+</script>
+</html>
